@@ -1,0 +1,122 @@
+{
+	"difficulty": [
+	{"difficulty_name":"advanced"}, {"difficulty_name":"intermediate"}, {"difficulty_name":"novice"}
+	],
+	"answers": [
+	{"answer_id":1,"answer_text":"1 over 8"}, {"answer_id":2,"answer_text":"2 over 9"}, {"answer_id":3,"answer_text":"2 over 7"},
+	{"answer_id":4,"answer_text":"3 over 8"}, {"answer_id":5,"answer_text":"1 over 2"}, {"answer_id":6,"answer_text":"(250+0.59)n"},
+	{"answer_id":7,"answer_text":"250+0.59n"}, {"answer_id":8,"answer_text":"(250+5.90)n"}, {"answer_id":9,"answer_text":"250+5.90n"},
+	{"answer_id":10,"answer_text":"250n+5.90"}, {"answer_id":11,"answer_text":"k+5"}, {"answer_id":12,"answer_text":"k+15"},
+	{"answer_id":13,"answer_text":"k+20"}, {"answer_id":14,"answer_text":"k+30"}, {"answer_id":15,"answer_text":"k+45"},
+	{"answer_id":16,"answer_text":"-15.625"}, {"answer_id":17,"answer_text":"-8.794"}, {"answer_id":18,"answer_text":"-8.125"}, 
+	{"answer_id":19,"answer_text":"-7.875"}, {"answer_id":20,"answer_text":"421.875"}, {"answer_id":21,"answer_text":"10"},
+	{"answer_id":22,"answer_text":"20"}, {"answer_id":23,"answer_text":"25"}, {"answer_id":24,"answer_text":"30"}, {"answer_id":25,"answer_text":"40"},
+	{"answer_id":26,"answer_text":"x^2 - 6x + 5 = 0"}, {"answer_id":27,"answer_text":"x^2 - 5x - 6 = 0"}, {"answer_id":28,"answer_text":"x^2 - 5x + 6 = 0"},
+	{"answer_id":29,"answer_text":"x^2 + 5x - 6 = 0"}, {"answer_id":30,"answer_text":"x^2 + 5x + 6 = 0"}, {"answer_id":31,"answer_text":"4.36"},
+	{"answer_id":32,"answer_text":"5.92"}, {"answer_id":33,"answer_text":"7.91"}, {"answer_id":34,"answer_text":"9.11"}, {"answer_id":35,"answer_text":"22.25"},
+	{"answer_id":36,"answer_text":"-6"}, {"answer_id":37,"answer_text":"-3"}, {"answer_id":38,"answer_text":"2"}, {"answer_id":39,"answer_text":"3"},
+	{"answer_id":40,"answer_text":"-2"}, {"answer_id":41,"answer_text":"4"}, {"answer_id":42,"answer_text":"5"}, {"answer_id":43,"answer_text":"9"},
+	{"answer_id":44,"answer_text":"4+5i"}, {"answer_id":45,"answer_text":"5+4i"}, {"answer_id":46,"answer_text":"a^c = x"}, {"answer_id":47,"answer_text":"a^x = c"},
+	{"answer_id":48,"answer_text":"c^a = x"}, {"answer_id":49,"answer_text":"c^x = a"}, {"answer_id":50,"answer_text":"x^c = a"}, {"answer_id":51,"answer_text":"None"},
+	{"answer_id":52,"answer_text":"One"}, {"answer_id":53,"answer_text":"Two"}, {"answer_id":54,"answer_text":"Three"}, {"answer_id":55,"answer_text":"More Than Three"},
+	{"answer_id":56,"answer_text":"30-39"}, {"answer_id":57,"answer_text":"40-49"}, {"answer_id":58,"answer_text":"50-59"}, {"answer_id":59,"answer_text":"60-69"},
+	{"answer_id":60,"answer_text":"70-79"}, {"answer_id":61,"answer_text":"2"}, {"answer_id":62,"answer_text":"1"}, {"answer_id":63,"answer_text":"0"}, {"answer_id":64,"answer_text":"-1"},
+	{"answer_id":65,"answer_text":"-2"}, {"answer_id":66,"answer_text":"5"}, {"answer_id":67,"answer_text":"23"}, {"answer_id":68,"answer_text":"35"}, {"answer_id":69,"answer_text":"38"},
+	{"answer_id":70,"answer_text":"46"}, {"answer_id":71,"answer_text":"24"}, {"answer_id":72,"answer_text":"96"}, {"answer_id":73,"answer_text":"192"}, {"answer_id":74,"answer_text":"288"},
+	{"answer_id":75,"answer_text":"576"}, {"answer_id":76,"answer_text":"Scenes from the everyday lives of African Americans, which are realistically depicted in the paintings of Henry Ossawa Tanner."},
+	{"answer_id":77,"answer_text":"Scenes from the everyday lives of African Americans being realistically depicted in the paintings of Henry Ossawa Tanner."},
+	{"answer_id":78,"answer_text":"The paintings of Henry Ossawa Tanner realistically depict scenes from the everyday lives of African Americans."},
+	{"answer_id":79,"answer_text":"Henry Ossawa Tanner, in his realistic paintings, depicting scenes from the everyday lives of African Americans."},
+	{"answer_id":80,"answer_text":"Henry Ossawa Tanner, whose paintings realistically depict scenes from the everyday lives of African Americans."},
+	{"answer_id":81,"answer_text":"Looking up"}, {"answer_id":82,"answer_text":"While looking up"}, {"answer_id":83,"answer_text":"By looking up"}, {"answer_id":84,"answer_text":"Viewing"},
+	{"answer_id":85,"answer_text":"Viewed"}, {"answer_id":86,"answer_text":"symptoms, another that occurs"}, {"answer_id":87,"answer_text":"symptoms; another one that occurs"},
+	{"answer_id":88,"answer_text":"symptoms, the other, and it occurs"}, {"answer_id":89,"answer_text":"symptoms; another one which is occurring"},
+	{"answer_id":90,"answer_text":"symptoms and also occurring"}, {"answer_id":91,"answer_text":"Underestimating its value, breakfast is a meal many people skip."},
+	{"answer_id":92,"answer_text":"Breakfast is skipped by many people because of their underestimating its value."}, {"answer_id":93,"answer_text":"Many people, underestimating the value of breakfast, and skipping it."},
+	{"answer_id":94,"answer_text":"Many people skip breakfast because they underestimate its value."}, {"answer_id":95,"answer_text":"A meal skipped by many people underestimating its value is breakfast."},
+	{"answer_id":96,"answer_text":"which have a belief in finding the treasure in them"}, {"answer_id":97,"answer_text":"that belief there is treasure to be found in them"},
+	{"answer_id":98,"answer_text":"who believe they hold treasure and that they can find it"}, {"answer_id":99,"answer_text":"who believe that there is treasure to be found in them"},
+	{"answer_id":100,"answer_text":"who believe about treasure to be found in them"}, {"answer_id":101,"answer_text":"either fiction or drama"}, {"answer_id":102,"answer_text":"either fiction or in drama"},
+	{"answer_id":103,"answer_text":"either in fiction or drama"}, {"answer_id":104,"answer_text":"in either fiction or drama"}, {"answer_id":105,"answer_text":"in either fiction or in drama"},
+	{"answer_id":106,"answer_text":"Corps were adaptations of equipment used by the Plains Indians, particularly that of the heliograph"}, {"answer_id":107,"answer_text":"Corps, there were adaptations of equipment used by the Plains Indians, particularly the heliograph"},
+	{"answer_id":108,"answer_text":"Corps, and in particular the heliograph, was an adaptation of equipment used by the Plains Indians"}, {"answer_id":109,"answer_text":"Corps, and in particular the heliograph, were adaptations of equipment used by the Plains Indians"},
+	{"answer_id":110,"answer_text":"Corps being adaptations, the heliograph in particular, of those used by Plains Indians"}, {"answer_id":111,"answer_text":"resistance, frequently compounded in certain countries because"},
+	{"answer_id":112,"answer_text":"resistance, frequently compounded in certain countries and"}, {"answer_id":113,"answer_text":"resistance, frequently compounded in certain countries when"},
+	{"answer_id":114,"answer_text":"resistance is frequently compounded in certain countries where"}, {"answer_id":115,"answer_text":"resistance is frequently compounded in certain countries and"},
+	{"answer_id":116,"answer_text":"reconciliation . . assured"}, {"answer_id":117,"answer_text":"warfare . . avoidable"}, {"answer_id":118,"answer_text":"ruination . . impossible"},
+	{"answer_id":119,"answer_text":"conflict . . inevitable"}, {"answer_id":120,"answer_text":"diplomacy . . simple"}, {"answer_id":121,"answer_text":"braggart"},
+	{"answer_id":122,"answer_text":"dilettante"}, {"answer_id":123,"answer_text":"pilferer"}, {"answer_id":124,"answer_text":"prevaricator"}, {"answer_id":125,"answer_text":"raconteur"},
+	{"answer_id":126,"answer_text":"supplant"}, {"answer_id":127,"answer_text":"dramatize"}, {"answer_id":128,"answer_text":"finagle"}, {"answer_id":129,"answer_text":"winnow"},
+	{"answer_id":130,"answer_text":"overhaul"}, {"answer_id":131,"answer_text":"parallel . . an identical"}, {"answer_id":132,"answer_text":"precise . . an exact"},
+	{"answer_id":133,"answer_text":"interchangeable . . a particular"}, {"answer_id":134,"answer_text":"exclusive . . a separate"}, {"answer_id":135,"answer_text":"useful . . a useless"},
+	{"answer_id":136,"answer_text":"venture . . reward"}, {"answer_id":137,"answer_text":"pretend . . praise"}, {"answer_id":138,"answer_text":"conspire . . reimburse"},
+	{"answer_id":139,"answer_text":"refuse . . cheat"}, {"answer_id":140,"answer_text":"collude . . swindle"}, {"answer_id":141,"answer_text":"invalidate"}, {"answer_id":142,"answer_text":"objectify"},
+	{"answer_id":143,"answer_text":"incite"}, {"answer_id":144,"answer_text":"celebrate"}, {"answer_id":145,"answer_text":"enrich"}, {"answer_id":146,"answer_text":"vicariously"},
+	{"answer_id":147,"answer_text":"heedlessly"}, {"answer_id":148,"answer_text":"innocuously"}, {"answer_id":149,"answer_text":"mystically"}, {"answer_id":150,"answer_text":"voluminously"},
+	{"answer_id":151,"answer_text":"concentration . . incidental"}, {"answer_id":152,"answer_text":"disagreement . . incongruous"}, {"answer_id":153,"answer_text":"collaboration . . predictable"},
+	{"answer_id":154,"answer_text":"hostility . . dazzling"}, {"answer_id":155,"answer_text":"cooperation . . remarkable"}, {"answer_id":156,"answer_text":"heretical"},
+	{"answer_id":157,"answer_text":"meticulous"}, {"answer_id":158,"answer_text":"precise"}, {"answer_id":159,"answer_text":"incoherent"}, {"answer_id":160,"answer_text":"sagacious"}
+	], 
+	"category": [
+	{"category_name":"math"}, {"category_name":"reading"}, {"category_name":"writing"}
+	],
+	"grade": [
+	{"grade_level":9,"grade_name":"Freshman"}, {"grade_level":10,"grade_name":"Sophomore"}, {"grade_level":11,"grade_name":"Junior"},
+	{"grade_level":12,"grade_name":"Senior"}, {"grade_level":13,"grade_name":"Other"}
+	],
+	"highscores": [
+	{"username":"gary","category_name":"math","score":1000}
+	],
+	"user": [
+	{"username":"gary","grade_level":"other"}
+	],
+	"mode": [
+	{"mode_name":"Survival"}, {"mode_name":"Time Attack"}
+	],
+	"questions": [
+	{"question_id":1,"category_name":"math","answer_id":4,"text":"A special lottery is to be held to select the student who will live in the only deluxe room ina  dormitory. There are 100 seniors, 150 juniors, and 200 sophomores who applied. Each senior's name is placed in the lottery 3 times; each junior's name, 2 times; and each sophomore's name, 1 time. What is the probability that a senior's name will be chosen?","difficulty":"novice"},
+	{"question_id":2,"category_name":"math","answer_id":7,"text":"A band wants to distribute its music on compact distribute its music on compact discs (CDs). The equipment to produce the CDs costs 250 dollars, and blank CDs cost 5 dollars and 90 cents for a package of 10. Which of the following represents the total cost, in dollars, to produce CDs, where n is a multiple of 10?","difficulty":"novice"},
+	{"question_id":3,"category_name":"math","answer_id":14,"text":"If k is divisible by 2, 3, and 15, which of the following is also divisible by these numbers?","difficulty":"novice"},
+	{"question_id":4,"category_name":"math","answer_id":18,"text":"A number n is increased by 8. If the cube root of that result equals negative 0.5, what is the value of n?","difficulty":"novice"},
+	{"question_id":5,"category_name":"math","answer_id":21,"text":"Tickets for a show cost 3 dollars or 5 dollars. If 50 tickets were sold for a total of 230 dollars, how many tickets were sold for 3 dollars?","difficulty":"intermediate"},
+	{"question_id":6,"category_name":"math","answer_id":27,"text":"The sum of the two roots of a quadratic equation is 5 and their product is -6. Which of the following could be the equation?","difficulty":"intermediate"},
+	{"question_id":7,"category_name":"math","answer_id":34,"text":"What is the distance in space between the points with coordinates (-3, 6, 7) and (2, -1, 4)?","difficulty":"intermediate"},
+	{"question_id":8,"category_name":"math","answer_id":36,"text":"If x - 2 is a factor of x cubed + (k * x)squared + (12x - 8), then k equals","difficulty":"novice"},
+	{"question_id":9,"category_name":"math","answer_id":41,"text":"If a and b are real numbers, i^2= -1, and (a+b) + 5i = 9 + ai, what is the value of b?","difficulty":"intermediate"},
+	{"question_id":10,"category_name":"math","answer_id":49,"text":"If log_c a = x, which of the following must be true?","difficulty":"intermediate"},
+	{"question_id":11,"category_name":"math","answer_id":51,"text":"The numbers 3, 5, and 7 are three consecutive odd numbers that are prime. How many other triplets of consecutive odd numbers greater than 1 consist entirely of primes?","difficulty":"advanced"},
+	{"question_id":12,"category_name":"math","answer_id":59,"text":"The graphs above show United States Census Bureau population figures for the year 2000 for various age groups, together with projections for the year 2050. Of the following age groups, for which is the projected percent increase in population from 2000 to 2050 greatest?","difficulty":"advanced"},
+	{"question_id":13,"category_name":"math","answer_id":64,"text":"If line l is the perpendicular bisector of the line segment with endpoints (2,0) and (0, negative 2), what is the slope of line l?","difficulty":"advanced"},
+	{"question_id":14,"category_name":"math","answer_id":69,"text":"The function h given by function h(t) = (negative 16 times (t^2)) + (46 times t) + 5 represents the height of a ball, in feet, t seconds after it is thrown. To the nearest foot, what is the maximum height the ball reaches?","difficulty":"advanced"},
+	{"question_id":15,"category_name":"math","answer_id":71,"text":"The front, side, and bottom faces of a rectangular solid have areas of 24 square centimeters, 8 square centimeters, and 3 square centimeters, respectively. What is the volume of the solid, in cubic centimeters?","difficulty":"advanced"},
+	{"question_id":16,"category_name":"writing","answer_id":78,"text":"Scenes from the everyday lives of African Americans, which are realistically depicted in the paintings of Henry Ossawa Tanner.","difficulty":"intermediate"},
+	{"question_id":17,"category_name":"writing","answer_id":85,"text":"Looking up from the base of the mountain, the trail seemed more treacherous than it really was.","difficulty":"advanced"},
+	{"question_id":18,"category_name":"writing","answer_id":87,"text":"One of the most common types of mistakes that inexperienced physicians make is misreading symptoms, another that occurs about as frequently is recommending inappropriate treatment.","difficulty":"advanced"},
+	{"question_id":19,"category_name":"writing","answer_id":94,"text":"Underestimating its value, breakfast is a meal many people skip.","difficulty":"novice"},
+	{"question_id":20,"category_name":"writing","answer_id":99,"text":"Certain shipwrecks have a particular fascination for those people which have a belief in finding the treasure in them.","difficulty":"intermediate"},
+	{"question_id":21,"category_name":"writing","answer_id":104,"text":"The revolt against Victorianism was perhaps even more marked in poetry than either fiction or drama.","difficulty":"novice"},
+	{"question_id":22,"category_name":"writing","answer_id":109,"text":"Many of the instruments used in early operations of the United States Army Signal Corps were adaptations of equipment used by the Plains Indians, particularly that of the heliograph.","difficulty":"intermediate"},
+	{"question_id":23,"category_name":"writing","answer_id":114,"text":"The problem of antibiotic resistance, frequently compounded in certain countries because the sale and use of antibiotics are not tightly controlled.","difficulty":"advanced"},
+	{"question_id":24,"category_name":"reading","answer_id":119,"text":"Because King Philip's desire to make Spain the dominant power in sixteenth-century Europe ran counter to Queen Elizabeth's insistence on autonomy for England, ------- was -------.","difficulty":"advanced"},
+	{"question_id":25,"category_name":"reading","answer_id":125,"text":"There is no doubt that Larry is a genuine ------- : he excels at telling stories that fascinate his listeners.","difficulty":"advanced"},
+	{"question_id":26,"category_name":"reading","answer_id":129,"text":"A discerning publishing agent can ------- promising material from a mass of submissions, separating the good from the bad.","difficulty":"intermediate"},
+	{"question_id":27,"category_name":"reading","answer_id":133,"text":"Although some think the terms ","difficulty":"novice"},
+	{"question_id":28,"category_name":"reading","answer_id":140,"text":"The novel's protagonist, a pearl diver, na?vely expects that the buyers will compete among themselves to pay him the best price for his pearl, but instead they ------- to ------- him.","difficulty":"intermediate"},
+	{"question_id":29,"category_name":"reading","answer_id":145,"text":"The addition of descriptive details to the basic information serves to ------- the book by producing a fuller account.","difficulty":"novice"},
+	{"question_id":30,"category_name":"reading","answer_id":146,"text":"Ramona had never visited Niagara Falls, but she could appreciate their splendor ------- through the descriptions of others.","difficulty":"intermediate"},
+	{"question_id":31,"category_name":"reading","answer_id":155,"text":"Members of the research team were initially so adversarial that ------- seemed impossible; the project's inauspicious start made its final success all the more ------- .","difficulty":"advanced"},
+	{"question_id":32,"category_name":"reading","answer_id":156,"text":"Joshua's radical ideas were frowned on by most of his coworkers, who found them too ------- for their conservative tastes.","difficulty":"novice"}
+	],
+	"Options": [
+	{"question_id":"1","answers":[1,2,3,4,5]},{"question_id":"2","answers":[6,7,8,9,10]},{"question_id":"3","answers":[11,12,13,14,15]},{"question_id":"4","answers":[16,17,18,19,20]},
+	{"question_id":"5","answers":[21,22,23,24,25]},{"question_id":"6","answers":[26,27,28,29,30]},{"question_id":"7","answers":[31,32,33,34,35]},{"question_id":"8","answers":[36,37,38,39,40]},
+	{"question_id":"9","answers":[41,42,43,44,45]},{"question_id":"10","answers":[46,47,48,49,50]},{"question_id":"11","answers":[51,52,53,54,55]},{"question_id":"12","answers":[56,57,58,59,60]},
+	{"question_id":"13","answers":[61,62,63,64,65]},{"question_id":"14","answers":[66,67,68,69,70]},{"question_id":"15","answers":[71,72,73,74,75]},{"question_id":"16","answers":[76,77,78,79,80]},
+	{"question_id":"17","answers":[81,82,83,84,85]},{"question_id":"18","answers":[86,87,88,89,90]},{"question_id":"19","answers":[91,92,93,94,95]},{"question_id":"20","answers":[96,97,98,99,100]},
+	{"question_id":"21","answers":[101,102,103,104,105]},{"question_id":"22","answers":[106,107,108,109,110]},{"question_id":"23","answers":[111,112,113,114,115]},{"question_id":"24","answers":[116,117,118,119,120]},
+	{"question_id":"25","answers":[121,122,123,124,125]},{"question_id":"26","answers":[126,127,128,129,130]},{"question_id":"27","answers":[131,132,133,134,135]},{"question_id":"28","answers":[136,137,138,139,140]},
+	{"question_id":"29","answers":[141,142,143,144,145]},{"question_id":"30","answers":[146,147,148,149,150]},{"question_id":"31","answers":[151,152,153,154,155]},{"question_id":"32","answers":[156,157,158,159,160]}
+	]
+
+}
+
