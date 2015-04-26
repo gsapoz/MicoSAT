@@ -7,12 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0372BADE1AE9E80F00E7DEDD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0372BADC1AE9E80F00E7DEDD /* Bolts.framework */; };
+		0372BADF1AE9E80F00E7DEDD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0372BADD1AE9E80F00E7DEDD /* Parse.framework */; };
+		0372BAE11AE9EFD400E7DEDD /* RoughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372BAE01AE9EFD400E7DEDD /* RoughVC.swift */; };
+		0372BAE31AE9F46300E7DEDD /* SubjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372BAE21AE9F46200E7DEDD /* SubjectVC.swift */; };
+		03A75B3E1AE9D762009D37FA /* Rough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A75B3D1AE9D762009D37FA /* Rough.swift */; };
+		03A75B411AE9D9BA009D37FA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B3F1AE9D9BA009D37FA /* Bolts.framework */; };
+		03A75B421AE9D9BA009D37FA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B401AE9D9BA009D37FA /* Parse.framework */; };
+		03A75B441AE9D9F2009D37FA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B431AE9D9F2009D37FA /* AudioToolbox.framework */; };
+		03A75B461AE9D9FD009D37FA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B451AE9D9FD009D37FA /* CFNetwork.framework */; };
+		03A75B481AE9DA0A009D37FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B471AE9DA09009D37FA /* CoreGraphics.framework */; };
+		03A75B4A1AE9DA12009D37FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B491AE9DA12009D37FA /* CoreLocation.framework */; };
+		03A75B4C1AE9DA1F009D37FA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B4B1AE9DA1F009D37FA /* MobileCoreServices.framework */; };
+		03A75B4E1AE9DA29009D37FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B4D1AE9DA29009D37FA /* QuartzCore.framework */; };
+		03A75B501AE9DA35009D37FA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B4F1AE9DA35009D37FA /* Security.framework */; };
+		03A75B521AE9DA45009D37FA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B511AE9DA45009D37FA /* StoreKit.framework */; };
+		03A75B541AE9DA56009D37FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B531AE9DA56009D37FA /* SystemConfiguration.framework */; };
+		03A75B561AE9DA62009D37FA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B551AE9DA62009D37FA /* libz.dylib */; };
+		03A75B581AE9DA72009D37FA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75B571AE9DA72009D37FA /* libsqlite3.dylib */; };
+		03D09AFD1AEAC38100080B94 /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09AFB1AEAC38100080B94 /* Locksmith.swift */; };
+		03D09AFE1AEAC38100080B94 /* LocksmithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09AFC1AEAC38100080B94 /* LocksmithRequest.swift */; };
+		03D09B001AEC048A00080B94 /* TAmode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09AFF1AEC048A00080B94 /* TAmode.swift */; };
+		03D09B021AEC04A300080B94 /* TAsubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B011AEC04A300080B94 /* TAsubject.swift */; };
+		03D09B041AEC04D600080B94 /* TAquestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B031AEC04D600080B94 /* TAquestions.swift */; };
+		03D09B061AEC1AAD00080B94 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B051AEC1AAD00080B94 /* CategoryVC.swift */; };
+		03D09B0A1AED372400080B94 /* RoughTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B091AED372400080B94 /* RoughTableViewController.swift */; };
+		03D09B0C1AED400B00080B94 /* globalscoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B0B1AED400B00080B94 /* globalscoreViewController.swift */; };
+		0647028C1AED5BB200CFC87B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0647028B1AED5BB200CFC87B /* Parse.framework */; };
+		0647028E1AED5BBC00CFC87B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0647028D1AED5BBC00CFC87B /* Bolts.framework */; };
 		06F089611AE73B9F0068F1DB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F089601AE73B9F0068F1DB /* SwiftyJSON.swift */; };
 		06F089631AE73BC10068F1DB /* micosat.json in Resources */ = {isa = PBXBuildFile; fileRef = 06F089621AE73BC10068F1DB /* micosat.json */; };
 		06F089971AE82C850068F1DB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F089961AE82C850068F1DB /* HomeVC.swift */; };
 		06F089991AE82CD30068F1DB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F089981AE82CD30068F1DB /* LoginVC.swift */; };
 		06F0899B1AE82D020068F1DB /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0899A1AE82D020068F1DB /* SignupVC.swift */; };
-		06F0899D1AE832DD0068F1DB /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0899C1AE832DD0068F1DB /* CategoryVC.swift */; };
 		06F089A31AE8368A0068F1DB /* HighScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F089A21AE8368A0068F1DB /* HighScoreVC.swift */; };
 		CA395AF81A8EA22F0010463F /* QModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA395AF71A8EA22F0010463F /* QModel.swift */; };
 		D9DBBA671AA52B0B00885B4C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DBBA661AA52B0B00885B4C /* HomeController.swift */; };
@@ -35,12 +62,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0372BADC1AE9E80F00E7DEDD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.1 (4)/Bolts.framework"; sourceTree = "<group>"; };
+		0372BADD1AE9E80F00E7DEDD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.7.1 (4)/Parse.framework"; sourceTree = "<group>"; };
+		0372BAE01AE9EFD400E7DEDD /* RoughVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoughVC.swift; sourceTree = "<group>"; };
+		0372BAE21AE9F46200E7DEDD /* SubjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectVC.swift; sourceTree = "<group>"; };
+		03A75B3D1AE9D762009D37FA /* Rough.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rough.swift; sourceTree = "<group>"; };
+		03A75B3F1AE9D9BA009D37FA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "micoSAT app/Bolts.framework"; sourceTree = "<group>"; };
+		03A75B401AE9D9BA009D37FA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "micoSAT app/Parse.framework"; sourceTree = "<group>"; };
+		03A75B431AE9D9F2009D37FA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		03A75B451AE9D9FD009D37FA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		03A75B471AE9DA09009D37FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03A75B491AE9DA12009D37FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		03A75B4B1AE9DA1F009D37FA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		03A75B4D1AE9DA29009D37FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		03A75B4F1AE9DA35009D37FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		03A75B511AE9DA45009D37FA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		03A75B531AE9DA56009D37FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		03A75B551AE9DA62009D37FA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		03A75B571AE9DA72009D37FA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		03A75B5A1AE9E2A5009D37FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/RoughViewController.swift; sourceTree = "<group>"; };
+		03D09AFB1AEAC38100080B94 /* Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locksmith.swift; sourceTree = "<group>"; };
+		03D09AFC1AEAC38100080B94 /* LocksmithRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithRequest.swift; sourceTree = "<group>"; };
+		03D09AFF1AEC048A00080B94 /* TAmode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAmode.swift; sourceTree = "<group>"; };
+		03D09B011AEC04A300080B94 /* TAsubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAsubject.swift; sourceTree = "<group>"; };
+		03D09B031AEC04D600080B94 /* TAquestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAquestions.swift; sourceTree = "<group>"; };
+		03D09B051AEC1AAD00080B94 /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		03D09B091AED372400080B94 /* RoughTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoughTableViewController.swift; sourceTree = "<group>"; };
+		03D09B0B1AED400B00080B94 /* globalscoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = globalscoreViewController.swift; sourceTree = "<group>"; };
+		0647028B1AED5BB200CFC87B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		0647028D1AED5BBC00CFC87B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		06F089601AE73B9F0068F1DB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		06F089621AE73BC10068F1DB /* micosat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = micosat.json; sourceTree = "<group>"; };
 		06F089961AE82C850068F1DB /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		06F089981AE82CD30068F1DB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		06F0899A1AE82D020068F1DB /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
-		06F0899C1AE832DD0068F1DB /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		06F089A21AE8368A0068F1DB /* HighScoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreVC.swift; sourceTree = "<group>"; };
 		CA395AF71A8EA22F0010463F /* QModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QModel.swift; sourceTree = "<group>"; };
 		D9DBBA661AA52B0B00885B4C /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = ../HomeController.swift; sourceTree = "<group>"; };
@@ -61,6 +116,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0647028E1AED5BBC00CFC87B /* Bolts.framework in Frameworks */,
+				0647028C1AED5BB200CFC87B /* Parse.framework in Frameworks */,
+				03A75B581AE9DA72009D37FA /* libsqlite3.dylib in Frameworks */,
+				03A75B561AE9DA62009D37FA /* libz.dylib in Frameworks */,
+				03A75B541AE9DA56009D37FA /* SystemConfiguration.framework in Frameworks */,
+				03A75B521AE9DA45009D37FA /* StoreKit.framework in Frameworks */,
+				0372BADF1AE9E80F00E7DEDD /* Parse.framework in Frameworks */,
+				03A75B501AE9DA35009D37FA /* Security.framework in Frameworks */,
+				03A75B4E1AE9DA29009D37FA /* QuartzCore.framework in Frameworks */,
+				03A75B4C1AE9DA1F009D37FA /* MobileCoreServices.framework in Frameworks */,
+				03A75B4A1AE9DA12009D37FA /* CoreLocation.framework in Frameworks */,
+				03A75B481AE9DA0A009D37FA /* CoreGraphics.framework in Frameworks */,
+				03A75B461AE9D9FD009D37FA /* CFNetwork.framework in Frameworks */,
+				03A75B441AE9D9F2009D37FA /* AudioToolbox.framework in Frameworks */,
+				03A75B421AE9D9BA009D37FA /* Parse.framework in Frameworks */,
+				03A75B411AE9D9BA009D37FA /* Bolts.framework in Frameworks */,
+				0372BADE1AE9E80F00E7DEDD /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +149,21 @@
 		D9FD9D221A7861A300DC1030 = {
 			isa = PBXGroup;
 			children = (
+				0647028D1AED5BBC00CFC87B /* Bolts.framework */,
+				0647028B1AED5BB200CFC87B /* Parse.framework */,
+				03A75B571AE9DA72009D37FA /* libsqlite3.dylib */,
+				03A75B3F1AE9D9BA009D37FA /* Bolts.framework */,
+				03A75B401AE9D9BA009D37FA /* Parse.framework */,
+				03A75B551AE9DA62009D37FA /* libz.dylib */,
+				03A75B531AE9DA56009D37FA /* SystemConfiguration.framework */,
+				03A75B511AE9DA45009D37FA /* StoreKit.framework */,
+				03A75B4F1AE9DA35009D37FA /* Security.framework */,
+				03A75B4D1AE9DA29009D37FA /* QuartzCore.framework */,
+				03A75B4B1AE9DA1F009D37FA /* MobileCoreServices.framework */,
+				03A75B491AE9DA12009D37FA /* CoreLocation.framework */,
+				03A75B471AE9DA09009D37FA /* CoreGraphics.framework */,
+				03A75B451AE9D9FD009D37FA /* CFNetwork.framework */,
+				03A75B431AE9D9F2009D37FA /* AudioToolbox.framework */,
 				D9FD9D2D1A7861A300DC1030 /* micoSAT app */,
 				D9FD9D431A7861A400DC1030 /* micoSAT appTests */,
 				D9FD9D2C1A7861A300DC1030 /* Products */,
@@ -96,14 +183,27 @@
 			isa = PBXGroup;
 			children = (
 				06F089601AE73B9F0068F1DB /* SwiftyJSON.swift */,
+				0372BADC1AE9E80F00E7DEDD /* Bolts.framework */,
+				0372BADD1AE9E80F00E7DEDD /* Parse.framework */,
 				06F089621AE73BC10068F1DB /* micosat.json */,
 				D9DBBA661AA52B0B00885B4C /* HomeController.swift */,
 				D9FD9D301A7861A300DC1030 /* AppDelegate.swift */,
+				03D09AFB1AEAC38100080B94 /* Locksmith.swift */,
+				03D09AFC1AEAC38100080B94 /* LocksmithRequest.swift */,
 				D9FD9D321A7861A300DC1030 /* ViewController.swift */,
 				CA395AF71A8EA22F0010463F /* QModel.swift */,
 				D9FD9D341A7861A300DC1030 /* Main.storyboard */,
+				03D09B091AED372400080B94 /* RoughTableViewController.swift */,
+				03D09B051AEC1AAD00080B94 /* CategoryVC.swift */,
+				03D09AFF1AEC048A00080B94 /* TAmode.swift */,
+				03D09B011AEC04A300080B94 /* TAsubject.swift */,
+				03D09B031AEC04D600080B94 /* TAquestions.swift */,
+				0372BAE21AE9F46200E7DEDD /* SubjectVC.swift */,
+				0372BAE01AE9EFD400E7DEDD /* RoughVC.swift */,
+				03D09B0B1AED400B00080B94 /* globalscoreViewController.swift */,
+				03A75B591AE9E2A5009D37FA /* RoughViewController.swift */,
+				03A75B3D1AE9D762009D37FA /* Rough.swift */,
 				06F089A21AE8368A0068F1DB /* HighScoreVC.swift */,
-				06F0899C1AE832DD0068F1DB /* CategoryVC.swift */,
 				06F089961AE82C850068F1DB /* HomeVC.swift */,
 				06F089981AE82CD30068F1DB /* LoginVC.swift */,
 				06F0899A1AE82D020068F1DB /* SignupVC.swift */,
@@ -240,15 +340,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0372BAE31AE9F46300E7DEDD /* SubjectVC.swift in Sources */,
+				03D09B0C1AED400B00080B94 /* globalscoreViewController.swift in Sources */,
+				03D09B001AEC048A00080B94 /* TAmode.swift in Sources */,
+				03D09B041AEC04D600080B94 /* TAquestions.swift in Sources */,
 				06F0899B1AE82D020068F1DB /* SignupVC.swift in Sources */,
 				D9FD9D331A7861A300DC1030 /* ViewController.swift in Sources */,
 				D9FD9D311A7861A300DC1030 /* AppDelegate.swift in Sources */,
-				06F0899D1AE832DD0068F1DB /* CategoryVC.swift in Sources */,
+				03A75B3E1AE9D762009D37FA /* Rough.swift in Sources */,
+				03D09AFD1AEAC38100080B94 /* Locksmith.swift in Sources */,
+				03D09AFE1AEAC38100080B94 /* LocksmithRequest.swift in Sources */,
+				03D09B021AEC04A300080B94 /* TAsubject.swift in Sources */,
 				06F089991AE82CD30068F1DB /* LoginVC.swift in Sources */,
 				06F089A31AE8368A0068F1DB /* HighScoreVC.swift in Sources */,
+				03D09B061AEC1AAD00080B94 /* CategoryVC.swift in Sources */,
 				CA395AF81A8EA22F0010463F /* QModel.swift in Sources */,
 				06F089971AE82C850068F1DB /* HomeVC.swift in Sources */,
 				06F089611AE73B9F0068F1DB /* SwiftyJSON.swift in Sources */,
+				03D09B0A1AED372400080B94 /* RoughTableViewController.swift in Sources */,
+				0372BAE11AE9EFD400E7DEDD /* RoughVC.swift in Sources */,
 				D9DBBA671AA52B0B00885B4C /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +382,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		03A75B591AE9E2A5009D37FA /* RoughViewController.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A75B5A1AE9E2A5009D37FA /* Base */,
+			);
+			name = RoughViewController.swift;
+			sourceTree = "<group>";
+		};
 		D9FD9D341A7861A300DC1030 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,6 +492,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/micoSAT",
+					app,
+					"/Users/IzzaNawaz/Downloads/parse-library-1.7.1",
+					"(4)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "micoSAT app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,6 +510,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/micoSAT",
+					app,
+					"/Users/IzzaNawaz/Downloads/parse-library-1.7.1",
+					"(4)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "micoSAT app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

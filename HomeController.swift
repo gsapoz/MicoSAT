@@ -10,28 +10,31 @@ import UIKit
 
 class HomeController: UIViewController {
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let vc = segue.destinationViewController as! ViewController
-        if segue.identifier == "mathSegue"{
-            vc.subject = 0
-        }
-
-        if segue.identifier == "readingSegue"{
-            vc.subject = 1
-        }
-        
-        if segue.identifier == "writingSegue"{
-            vc.subject = 2
-        }
-    }
-    
-    @IBAction func cancelToHomeController(segue:UIStoryboardSegue) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        // Do any additional setup after loading the view.
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "easySegue"{
+            let vc: SubjectVC = segue.destinationViewController as! SubjectVC
+            vc.mode = "Easy"
+            
+        }
+        else if segue.identifier == "mediumSegue"{
+            let vc: SubjectVC = segue.destinationViewController as! SubjectVC
+            vc.mode = "Medium"
+            
+        }
+        else if segue.identifier == "advancedSegue"{
+            let vc: SubjectVC = segue.destinationViewController as! SubjectVC
+            vc.mode = "Advanced"
+        }
+    }
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Foundation
 
 class LoginVC: UIViewController,UITextFieldDelegate {
     
@@ -26,21 +28,13 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     
     
-    /*
-    // #pragma mark - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    }
-    */
     
     @IBAction func signinTapped(sender : UIButton) {
-        var username:NSString = txtUsername.text
-        var password:NSString = txtPassword.text
+     
+        var email:NSString = txtUsername.text
+        var userPassword:NSString = txtPassword.text
         
-        if ( username.isEqualToString("") || password.isEqualToString("") ) {
+        if ( email.isEqualToString("") || userPassword.isEqualToString("") ) {
             
             var alertView:UIAlertView = UIAlertView()
             alertView.title = "Sign in Failed!"
@@ -48,27 +42,35 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
-        } else {
-            // insert login code here
-            // uncomment this for session code
-            /*
-            {
+        }
+        else{
+        PFUser.logInWithUsernameInBackground(email as String, password:userPassword as String) { (user, error) -> Void in
+            if user != nil{
+            
                 NSLog("Login SUCCESS");
-                
+                    
+                    
                 var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-                prefs.setObject(username, forKey: "USERNAME")
+                prefs.setObject(email, forKey: "USERNAME")
                 prefs.setInteger(1, forKey: "ISLOGGEDIN")
                 prefs.synchronize()
-                
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
-            */
+            else if user == nil{
+                var alertView:UIAlertView = UIAlertView()
+                alertView.title = "Sign in Failed!"
+                alertView.message = "User not found. Please Sign up..."
+                alertView.delegate = self
+                alertView.addButtonWithTitle("OK")
+                alertView.show()
+                self.txtPassword.text = ""
+                }
+            }
         }
         
     }
-    
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+}
+    func textFieldShouldReturn(textField: UITextField) -> Bool {   //delegate method
         textField.resignFirstResponder()
         return true
     }
-}

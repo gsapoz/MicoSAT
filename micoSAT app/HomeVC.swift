@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Foundation
 
 class HomeVC: UIViewController {
     
@@ -14,8 +16,6 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -27,7 +27,7 @@ class HomeVC: UIViewController {
             self.performSegueWithIdentifier("goto_login", sender: self)
         } else {
             //set it so it says "Welcome (username)"
-            //self.usernameLabel.text = prefs.valueForKey("USERNAME") as NSString
+            self.usernameLabel.text = prefs.valueForKey("USERNAME") as! NSString as String
         }
     }
     

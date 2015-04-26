@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Parse
 
 class SignupVC: UIViewController {
     
     @IBOutlet var txtUsername : UITextField!
     @IBOutlet var txtPassword : UITextField!
-    @IBOutlet var txtConfirmPassword : UITextField!
+    @IBOutlet var txtEmail : UITextField!
+    @IBOutlet weak var messageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,29 +43,35 @@ class SignupVC: UIViewController {
     
     
     @IBAction func signupTapped(sender : UIButton) {
-        var username:NSString = txtUsername.text as NSString
-        var password:NSString = txtPassword.text as NSString
-        var confirm_password:NSString = txtConfirmPassword.text as NSString
+        var uname:NSString = txtUsername.text as NSString
+        var pswd:NSString = txtPassword.text as NSString
+        var emailentered:NSString = txtEmail.text as NSString
         
-        if ( username.isEqualToString("") || password.isEqualToString("") ) {
-            
-            var alertView:UIAlertView = UIAlertView()
-            alertView.title = "Sign Up Failed!"
-            alertView.message = "Please enter Username and Password"
-            alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
-            alertView.show()
-        } else if ( !password.isEqual(confirm_password) ) {
-            
-            var alertView:UIAlertView = UIAlertView()
-            alertView.title = "Sign Up Failed!"
-            alertView.message = "Passwords doesn't Match"
-            alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
-            alertView.show()
-        } else {
-            // insert sign up code here
-            // uncomment when sign up works
+        func userSignUp(){
+            var user = PFUser();
+            user.username = uname as String;
+            user.password = pswd as String
+            user.email = emailentered as String
+        
+        user.signUpInBackgroundWithBlock {
+            (success, error) -> Void in
+            if error == nil {
+                // Hooray! Let them use the app now.
+                self.messageLabel.text = "User Signed Up";
+                self.txtUsername.text = ""
+                self.txtEmail.text = ""
+                self.txtPassword.text = ""
+            } else {
+                self.messageLabel.text = "Error Occured!"
+            }
+            }
+        }
+        
+        if uname != "" && pswd != "" && emailentered != "" {
+            userSignUp()
+        }
+        else {
+            self.messageLabel.text = "All Fields Required"
             /*
             {
                 NSLog("Sign Up SUCCESS");
@@ -73,6 +81,7 @@ class SignupVC: UIViewController {
         }
         
     }
+    
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
         textField.resignFirstResponder()
