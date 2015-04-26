@@ -19,11 +19,15 @@ class Rough: UIViewController {
     @IBOutlet weak var A3: UIButton!
     @IBOutlet weak var A4: UIButton!
     @IBOutlet weak var A5: UIButton!
+    @IBOutlet weak var next: UIButton!
+    @IBOutlet weak var home: UIButton!
+    
     var points: Int = 0;
     var maxPoints: Int = 0;
     var count: Int = 1;
     var subject:String = "";
     var Answer:String = "";
+    var gameOver:Bool = false;
     
     @IBOutlet weak var pointsLabel: UILabel!
     
@@ -92,6 +96,9 @@ class Rough: UIViewController {
                 println("Error: \(error) \(error!.userInfo!)")
             }
         }
+        
+        gameOver = false
+        home.hidden = true
 
     }
 
@@ -151,8 +158,23 @@ class Rough: UIViewController {
         }
     }
     
-    
-    
+    func endGame() {
+        
+        gameOver = true
+        var gameOverText = "Game Over"
+        
+        var answerButtons = [A1, A2,  A3 , A4, A5]
+        var i = 0
+        
+        for i in 0..<answerButtons.count {
+            answerButtons[i].hidden = true
+        }
+        
+        Q.text = gameOverText
+        next.hidden = true
+        home.hidden = false
+        
+    }
     
     
     override func didReceiveMemoryWarning() {

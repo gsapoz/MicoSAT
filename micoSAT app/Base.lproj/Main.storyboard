@@ -239,23 +239,6 @@
                                     <action selector="A5pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KV2-E2-KXd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daW-Lr-Gev">
-                                <rect key="frame" x="92" y="507" width="136" height="41"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="2W6-c2-AzZ"/>
-                                    <constraint firstAttribute="width" constant="136" id="UnG-qV-C7A"/>
-                                </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5F-HB-daP" userLabel="Home">
                                 <rect key="frame" x="92" y="507" width="136" height="41"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,7 +246,7 @@
                                     <constraint firstAttribute="height" constant="41" id="Ecp-AY-nhv"/>
                                     <constraint firstAttribute="width" constant="136" id="xf2-Zz-0FR"/>
                                 </constraints>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Home">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -273,7 +256,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="nextPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AB6-gB-tRM"/>
+                                    <segue destination="hab-1M-lam" kind="modal" id="4Yq-5D-9dJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xej-Oe-P2x" userLabel="Back">
@@ -309,6 +292,26 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daW-Lr-Gev">
+                                <rect key="frame" x="92" y="507" width="136" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="2W6-c2-AzZ"/>
+                                    <constraint firstAttribute="width" constant="136" id="UnG-qV-C7A"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X3r-ZO-U3a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63425163380000005" green="1" blue="0.68058612340000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -350,6 +353,8 @@
                         <outlet property="A4" destination="fzo-2e-2Ed" id="1mZ-Mz-vi8"/>
                         <outlet property="A5" destination="4s1-lG-vs2" id="2ql-qu-l2J"/>
                         <outlet property="Q" destination="gB0-sQ-5Z9" id="iPa-qj-FpJ"/>
+                        <outlet property="home" destination="D5F-HB-daP" id="FLH-zm-cv3"/>
+                        <outlet property="next" destination="daW-Lr-Gev" id="Poy-pm-02R"/>
                         <outlet property="pointsLabel" destination="pAv-rM-Sn0" id="xce-F9-kyb"/>
                         <outlet property="timerL" destination="rVz-hs-5iQ" id="DIf-5P-AVb"/>
                     </connections>
@@ -1209,25 +1214,8 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8D-p7-sHD" userLabel="Home">
-                                <rect key="frame" x="92" y="507" width="136" height="41"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="0Ki-2A-GKf"/>
-                                    <constraint firstAttribute="height" constant="41" id="ayh-jp-mHV"/>
-                                </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="nextPressed:" destination="S8v-fF-i0Z" eventType="touchUpInside" id="QX4-L7-HCi"/>
+                                    <action selector="nextPressed:" destination="S8v-fF-i0Z" eventType="touchUpInside" id="nFR-Lc-3lF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzw-oo-9kI">
@@ -1259,6 +1247,26 @@
                                     <segue destination="Ss9-V2-Mcc" kind="modal" id="pps-s0-5N8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8D-p7-sHD" userLabel="Home">
+                                <rect key="frame" x="92" y="507" width="136" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="0Ki-2A-GKf"/>
+                                    <constraint firstAttribute="height" constant="41" id="ayh-jp-mHV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="hab-1M-lam" kind="modal" id="sFI-2Y-qEw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63425163380000005" green="1" blue="0.68058612340000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1269,7 +1277,7 @@
                             <constraint firstAttribute="centerX" secondItem="veU-vU-Bgj" secondAttribute="centerX" id="AUl-dQ-svJ"/>
                             <constraint firstAttribute="centerY" secondItem="D3D-2Z-EmZ" secondAttribute="centerY" constant="-132.5" id="H7B-nT-7kx"/>
                             <constraint firstItem="YIq-oO-oVw" firstAttribute="leading" secondItem="vzw-oo-9kI" secondAttribute="trailing" constant="8" id="LSI-gi-aFa"/>
-                            <constraint firstAttribute="centerY" secondItem="r8D-p7-sHD" secondAttribute="centerY" constant="-243.5" id="NaM-yc-am0"/>
+                            <constraint firstAttribute="centerY" secondItem="r8D-p7-sHD" secondAttribute="centerY" constant="-244" id="NaM-yc-am0"/>
                             <constraint firstAttribute="centerY" secondItem="M2z-8I-9NH" secondAttribute="centerY" constant="-34.5" id="TjI-nB-I2C"/>
                             <constraint firstAttribute="centerX" secondItem="1ck-Bu-Vxx" secondAttribute="centerX" id="UTs-la-9xX"/>
                             <constraint firstItem="nqn-45-PLz" firstAttribute="width" secondItem="veU-vU-Bgj" secondAttribute="height" multiplier="234:41" id="X2s-75-hK4"/>
@@ -1300,6 +1308,8 @@
                         <outlet property="A4" destination="D3D-2Z-EmZ" id="qww-8h-9Sh"/>
                         <outlet property="A5" destination="K47-fO-qtz" id="8ve-Nd-u3a"/>
                         <outlet property="Q" destination="1ck-Bu-Vxx" id="Xqa-BG-Nav"/>
+                        <outlet property="home" destination="r8D-p7-sHD" id="cbE-21-dmB"/>
+                        <outlet property="next" destination="Ut6-qR-7eV" id="I4V-98-XTt"/>
                         <outlet property="pointsLabel" destination="YIq-oO-oVw" id="6sL-gH-tpJ"/>
                     </connections>
                 </viewController>
@@ -1558,10 +1568,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jlt-tk-Cct"/>
-        <segue reference="EzB-tz-9bY"/>
+        <segue reference="sFI-2Y-qEw"/>
         <segue reference="CCG-4p-a6B"/>
         <segue reference="pps-s0-5N8"/>
+        <segue reference="EzB-tz-9bY"/>
         <segue reference="IwK-Ew-xeF"/>
         <segue reference="sgK-JG-W4G"/>
     </inferredMetricsTieBreakers>

@@ -17,6 +17,8 @@ class TAquestions: UIViewController {
     @IBOutlet weak var A3: UIButton!
     @IBOutlet weak var A4: UIButton!
     @IBOutlet weak var A5: UIButton!
+    @IBOutlet weak var home: UIButton!
+    @IBOutlet weak var next: UIButton!
     
     @IBOutlet weak var pointsLabel: UILabel!
     
@@ -25,6 +27,7 @@ class TAquestions: UIViewController {
     var count: Int = 1;
     var subject:String = "";
     var Answer:String = "";
+    var gameOver:Bool = false;
     
     var timer = NSTimer()
     var counter: Int = 20 //start from 20 not 0
@@ -145,6 +148,9 @@ class TAquestions: UIViewController {
             }
         }
         
+        gameOver = false
+        home.hidden = true
+        
     }
     @IBAction func A1presses(sender: AnyObject) {
         if A1.titleLabel?.text == Answer{
@@ -199,6 +205,24 @@ class TAquestions: UIViewController {
         else{
             A5.backgroundColor = UIColor.redColor()
         }
+    }
+    
+    func endGame() {
+        
+        gameOver = true
+        var gameOverText = "Game Over"
+        
+        var answerButtons = [A1, A2,  A3 , A4, A5]
+        var i = 0
+        
+        for i in 0..<answerButtons.count {
+            answerButtons[i].hidden = true
+        }
+        
+        Q.text = gameOverText
+        next.hidden = true
+        home.hidden = false
+        
     }
     
     override func didReceiveMemoryWarning() {
