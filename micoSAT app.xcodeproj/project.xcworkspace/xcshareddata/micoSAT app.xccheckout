@@ -12,22 +12,34 @@
 	<dict>
 		<key>5C5BD45B9D87165886061E2B6CDFA709B8C4D383</key>
 		<string>https://github.com/KhagayN/micoSAT-master</string>
+		<key>E2DDFE57DF71B667B00BD7C5E310CE4BD79E6661</key>
+		<string>https://github.com/gsapoz/MicoSAT</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>micoSAT app.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5C5BD45B9D87165886061E2B6CDFA709B8C4D383</key>
+		<string>../../../micoSAT-master</string>
+		<key>E2DDFE57DF71B667B00BD7C5E310CE4BD79E6661</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/KhagayN/micoSAT-master</string>
+	<string>https://github.com/gsapoz/MicoSAT</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5C5BD45B9D87165886061E2B6CDFA709B8C4D383</string>
+	<string>E2DDFE57DF71B667B00BD7C5E310CE4BD79E6661</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E2DDFE57DF71B667B00BD7C5E310CE4BD79E6661</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MicoSAT</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

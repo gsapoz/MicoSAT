@@ -27,7 +27,7 @@ class TAquestions: UIViewController {
     var Answer:String = "";
     
     var timer = NSTimer()
-    var counter: Int = 0
+    var counter: Int = 20 //start from 20 not 0
 
     
    // @IBOutlet weak var pointsLabel: UILabel!
@@ -73,7 +73,8 @@ class TAquestions: UIViewController {
         A4.backgroundColor = UIColor.whiteColor()
         A5.backgroundColor = UIColor.whiteColor()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
+        //timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
+        counter = 20
         
         var query = PFQuery(className:subject)
         query.whereKey("qnum", equalTo:count++)
@@ -104,15 +105,15 @@ class TAquestions: UIViewController {
         count = 0;
     }
     func updateTime(){
-        timerL.text = "Time: "+String(++counter)
-        if counter == 20{
+        timerL.text = "Time: "+String(--counter)
+        if counter == 0{
             resetTimer()
             timedNext()
         }
     }
     func resetTimer(){
         timer.invalidate()
-        counter = 1
+        counter = 20
     }
     override func viewDidLoad() {
         super.viewDidLoad()
