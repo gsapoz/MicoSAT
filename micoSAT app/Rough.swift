@@ -19,8 +19,7 @@ class Rough: UIViewController {
     @IBOutlet weak var A3: UIButton!
     @IBOutlet weak var A4: UIButton!
     @IBOutlet weak var A5: UIButton!
-    @IBOutlet weak var next: UIButton!
-    @IBOutlet weak var home: UIButton!
+    
     
     var points: Int = 0;
     var maxPoints: Int = 0;
@@ -31,8 +30,11 @@ class Rough: UIViewController {
     
     @IBOutlet weak var pointsLabel: UILabel!
     
-    @IBAction func nextPressed(sender: AnyObject) {
+    func nextonright() {
         
+        if(count==6){
+            self.performSegueWithIdentifier("gotoend", sender: self)
+        }
         A1.backgroundColor = UIColor.whiteColor()
         A2.backgroundColor = UIColor.whiteColor()
         A3.backgroundColor = UIColor.whiteColor()
@@ -72,7 +74,11 @@ class Rough: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if(count==6){
+            self.performSegueWithIdentifier("gotoend", sender: self)
+        }
+        
         var query = PFQuery(className:subject)
         query.whereKey("qnum", equalTo:count++)
         query.findObjectsInBackgroundWithBlock {
@@ -96,9 +102,6 @@ class Rough: UIViewController {
                 println("Error: \(error) \(error!.userInfo!)")
             }
         }
-        
-        gameOver = false
-        home.hidden = true
 
     }
 
@@ -107,6 +110,7 @@ class Rough: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A1.backgroundColor = UIColor.greenColor()
+            nextonright()
         }
         else{
             A1.backgroundColor = UIColor.redColor()
@@ -118,6 +122,7 @@ class Rough: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A2.backgroundColor = UIColor.greenColor()
+            nextonright()
         }
         else{
             A2.backgroundColor = UIColor.redColor()
@@ -130,6 +135,7 @@ class Rough: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A3.backgroundColor = UIColor.greenColor()
+            nextonright()
         }
         else{
             A3.backgroundColor = UIColor.redColor()
@@ -141,6 +147,7 @@ class Rough: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A4.backgroundColor = UIColor.greenColor()
+            nextonright()
         }
         else{
             A4.backgroundColor = UIColor.redColor()
@@ -152,6 +159,7 @@ class Rough: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A5.backgroundColor = UIColor.greenColor()
+            nextonright()
         }
         else{
             A5.backgroundColor = UIColor.redColor()
@@ -171,9 +179,6 @@ class Rough: UIViewController {
         }
         
         Q.text = gameOverText
-        next.hidden = true
-        home.hidden = false
-        
     }
     
     

@@ -17,8 +17,6 @@ class TAquestions: UIViewController {
     @IBOutlet weak var A3: UIButton!
     @IBOutlet weak var A4: UIButton!
     @IBOutlet weak var A5: UIButton!
-    @IBOutlet weak var home: UIButton!
-    @IBOutlet weak var next: UIButton!
     
     @IBOutlet weak var pointsLabel: UILabel!
     
@@ -35,14 +33,14 @@ class TAquestions: UIViewController {
     
    // @IBOutlet weak var pointsLabel: UILabel!
     func timedNext(){
+        counter = 20;
         A1.backgroundColor = UIColor.whiteColor()
         A2.backgroundColor = UIColor.whiteColor()
         A3.backgroundColor = UIColor.whiteColor()
         A4.backgroundColor = UIColor.whiteColor()
         A5.backgroundColor = UIColor.whiteColor()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
-        
+       questionsFinished()
         var query = PFQuery(className:subject)
         query.whereKey("qnum", equalTo:count++)
         query.findObjectsInBackgroundWithBlock {
@@ -65,65 +63,38 @@ class TAquestions: UIViewController {
                 println("Error: \(error) \(error!.userInfo!)")
             }
         }
-        
     }
 
     
-    @IBAction func nextPressed(sender: AnyObject) {
-        A1.backgroundColor = UIColor.whiteColor()
-        A2.backgroundColor = UIColor.whiteColor()
-        A3.backgroundColor = UIColor.whiteColor()
-        A4.backgroundColor = UIColor.whiteColor()
-        A5.backgroundColor = UIColor.whiteColor()
-        
-        //timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
-        counter = 20
-        
-        var query = PFQuery(className:subject)
-        query.whereKey("qnum", equalTo:count++)
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [AnyObject]?, error: NSError?) -> Void in
-            if error == nil {
-                if let objects = objects as? [PFObject] {
-                    for object in objects {
-                        self.Q.text = object["Q"] as? String
-                        
-                        self.A1.setTitle(object["A1"] as? String!, forState: UIControlState.Normal)
-                        self.A2.setTitle(object["A2"] as? String!, forState: UIControlState.Normal)
-                        self.A3.setTitle(object["A3"] as? String!, forState: UIControlState.Normal)
-                        self.A4.setTitle(object["A4"] as? String!, forState: UIControlState.Normal)
-                        self.A5.setTitle(object["A5"] as? String!, forState: UIControlState.Normal)
-                        self.Answer = (object["CA"] as? String!)!
-                    }
-                }
-            } else {
-                // Log details of the failure
-                println("Error: \(error) \(error!.userInfo!)")
-            }
-        }
-        
-    }
-
+   
     @IBAction func back(sender: AnyObject) {
         count = 0;
     }
     func updateTime(){
         timerL.text = "Time: "+String(--counter)
-        if counter == 0{
-            resetTimer()
+        
+        if counter < 10{
+            timerL.textColor = UIColor.redColor()
+        }
+        else{
+            timerL.textColor = UIColor.blackColor()
+        }
+        
+        if counter == 1{
             timedNext()
         }
     }
-    func resetTimer(){
-        timer.invalidate()
-        counter = 20
+    func questionsFinished(){
+        if(count==6){
+            self.performSegueWithIdentifier("gotoend", sender: self)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
-        //timerL.text = String(_cocoaString: timer)
-        
+      
+        questionsFinished()
         var query = PFQuery(className:subject)
         query.whereKey("qnum", equalTo:count++)
         query.findObjectsInBackgroundWithBlock {
@@ -147,9 +118,10 @@ class TAquestions: UIViewController {
                 println("Error: \(error) \(error!.userInfo!)")
             }
         }
+
         
-        gameOver = false
-        home.hidden = true
+        //gameOver = false
+        //home.hidden = true
         
     }
     @IBAction func A1presses(sender: AnyObject) {
@@ -157,6 +129,8 @@ class TAquestions: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A1.backgroundColor = UIColor.greenColor()
+            questionsFinished()
+            timedNext()
         }
         else{
             A1.backgroundColor = UIColor.redColor()
@@ -168,6 +142,9 @@ class TAquestions: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A2.backgroundColor = UIColor.greenColor()
+            questionsFinished()
+            timedNext()
+
         }
         else{
             A2.backgroundColor = UIColor.redColor()
@@ -179,6 +156,9 @@ class TAquestions: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A3.backgroundColor = UIColor.greenColor()
+            questionsFinished()
+            timedNext()
+
         }
         else{
             A3.backgroundColor = UIColor.redColor()
@@ -190,6 +170,9 @@ class TAquestions: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A4.backgroundColor = UIColor.greenColor()
+            questionsFinished()
+            timedNext()
+
         }
         else{
             A4.backgroundColor = UIColor.redColor()
@@ -201,6 +184,9 @@ class TAquestions: UIViewController {
             points += 10;
             pointsLabel.text = String(points)
             A5.backgroundColor = UIColor.greenColor()
+            questionsFinished()
+            timedNext()
+
         }
         else{
             A5.backgroundColor = UIColor.redColor()
@@ -220,8 +206,8 @@ class TAquestions: UIViewController {
         }
         
         Q.text = gameOverText
-        next.hidden = true
-        home.hidden = false
+        //next.hidden = true
+        //home.hidden = false
         
     }
     
