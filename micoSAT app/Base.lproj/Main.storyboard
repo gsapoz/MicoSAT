@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="biP-bY-BEa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="biP-bY-BEa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -581,6 +581,21 @@
                                     <segue destination="2Sg-NJ-54V" kind="modal" id="P89-Vv-Oic"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ICO " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1P-Xu-z94">
+                                <rect key="frame" x="200" y="243" width="134" height="93"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SAT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo8-Ay-x1Q">
+                                <rect key="frame" x="200" y="290" width="134" height="93"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-72.png" translatesAutoresizingMaskIntoConstraints="NO" id="f0t-tI-NSJ">
+                                <rect key="frame" x="71" y="249" width="121" height="121"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.63425163380000005" green="1" blue="0.68058612340000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1566,18 +1581,21 @@
             <point key="canvasLocation" x="996" y="1562"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-72.png" width="72" height="72"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pps-s0-5N8"/>
         <segue reference="CCG-4p-a6B"/>
+        <segue reference="pps-s0-5N8"/>
         <segue reference="ar3-Aa-qXP"/>
-        <segue reference="Mra-gf-jhI"/>
-        <segue reference="IwK-Ew-xeF"/>
         <segue reference="sgK-JG-W4G"/>
-        <segue reference="SSa-Kc-slt"/>
+        <segue reference="IwK-Ew-xeF"/>
+        <segue reference="Mra-gf-jhI"/>
+        <segue reference="P89-Vv-Oic"/>
     </inferredMetricsTieBreakers>
 </document>

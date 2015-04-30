@@ -33,6 +33,9 @@
 		03D09B061AEC1AAD00080B94 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B051AEC1AAD00080B94 /* CategoryVC.swift */; };
 		03D09B0A1AED372400080B94 /* RoughTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B091AED372400080B94 /* RoughTableViewController.swift */; };
 		03D09B0C1AED400B00080B94 /* globalscoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D09B0B1AED400B00080B94 /* globalscoreViewController.swift */; };
+		061D0EDB1AEDD7DF00104683 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 061D0EDA1AEDD7DF00104683 /* Icon-72@2x.png */; };
+		061D0EDD1AEDD7FA00104683 /* 022065-3d-transparent-glass-icon-culture-books3-stacked.png in Resources */ = {isa = PBXBuildFile; fileRef = 061D0EDC1AEDD7FA00104683 /* 022065-3d-transparent-glass-icon-culture-books3-stacked.png */; };
+		061D0EDF1AEDD80300104683 /* Screenshot 2015-04-26 22.01.52.png in Resources */ = {isa = PBXBuildFile; fileRef = 061D0EDE1AEDD80300104683 /* Screenshot 2015-04-26 22.01.52.png */; };
 		0647028C1AED5BB200CFC87B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0647028B1AED5BB200CFC87B /* Parse.framework */; };
 		0647028E1AED5BBC00CFC87B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0647028D1AED5BBC00CFC87B /* Bolts.framework */; };
 		06F089611AE73B9F0068F1DB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F089601AE73B9F0068F1DB /* SwiftyJSON.swift */; };
@@ -89,6 +92,9 @@
 		03D09B051AEC1AAD00080B94 /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		03D09B091AED372400080B94 /* RoughTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoughTableViewController.swift; sourceTree = "<group>"; };
 		03D09B0B1AED400B00080B94 /* globalscoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = globalscoreViewController.swift; sourceTree = "<group>"; };
+		061D0EDA1AEDD7DF00104683 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../../../Downloads/MicoSAT-master 2 2/icon/ios/Icon-72@2x.png"; sourceTree = "<group>"; };
+		061D0EDC1AEDD7FA00104683 /* 022065-3d-transparent-glass-icon-culture-books3-stacked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "022065-3d-transparent-glass-icon-culture-books3-stacked.png"; path = "../../../Desktop/022065-3d-transparent-glass-icon-culture-books3-stacked.png"; sourceTree = "<group>"; };
+		061D0EDE1AEDD80300104683 /* Screenshot 2015-04-26 22.01.52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2015-04-26 22.01.52.png"; path = "../../../Desktop/Screenshot 2015-04-26 22.01.52.png"; sourceTree = "<group>"; };
 		0647028B1AED5BB200CFC87B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		0647028D1AED5BBC00CFC87B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		06F089601AE73B9F0068F1DB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -182,7 +188,10 @@
 		D9FD9D2D1A7861A300DC1030 /* micoSAT app */ = {
 			isa = PBXGroup;
 			children = (
+				061D0EDE1AEDD80300104683 /* Screenshot 2015-04-26 22.01.52.png */,
+				061D0EDC1AEDD7FA00104683 /* 022065-3d-transparent-glass-icon-culture-books3-stacked.png */,
 				06F089601AE73B9F0068F1DB /* SwiftyJSON.swift */,
+				061D0EDA1AEDD7DF00104683 /* Icon-72@2x.png */,
 				0372BADC1AE9E80F00E7DEDD /* Bolts.framework */,
 				0372BADD1AE9E80F00E7DEDD /* Parse.framework */,
 				06F089621AE73BC10068F1DB /* micosat.json */,
@@ -321,8 +330,11 @@
 			files = (
 				06F089631AE73BC10068F1DB /* micosat.json in Resources */,
 				D9FD9D361A7861A300DC1030 /* Main.storyboard in Resources */,
+				061D0EDD1AEDD7FA00104683 /* 022065-3d-transparent-glass-icon-culture-books3-stacked.png in Resources */,
+				061D0EDB1AEDD7DF00104683 /* Icon-72@2x.png in Resources */,
 				D9FD9D3B1A7861A300DC1030 /* LaunchScreen.xib in Resources */,
 				D9FD9D381A7861A300DC1030 /* Images.xcassets in Resources */,
+				061D0EDF1AEDD80300104683 /* Screenshot 2015-04-26 22.01.52.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
